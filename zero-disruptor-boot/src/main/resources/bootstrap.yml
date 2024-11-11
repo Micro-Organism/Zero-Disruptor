@@ -5,3 +5,12 @@ spring:
         active: dev
 server:
     port: 8080
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+    endpoint:
+        shutdown:
+            enabled: true
